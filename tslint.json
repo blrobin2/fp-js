@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "tslint-immutable"
+  ],
+  "rules": {
+    "no-var-keyword": true,
+    "typedef": [true, "call-signature"],
+    "readonly-keyword": true,
+    "readonly-array": true,
+    "no-let": true,
+    "no-this": true,
+    "no-class": true,
+    "no-mixed-interface": true,
+    //"no-expression-statement": true,
+    "semicolon": [true, "never"]
+  }
+}
