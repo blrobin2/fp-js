@@ -5,15 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write --no-semi  --single-quote 'src/*.ts'",
     "lint": "tslint src/*.ts",
     "build": "webpack",
-    "publish": "npm run lint && npm run build"
+    "prepublish": "npm run format && npm run lint && npm run build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/ramda": "0.0.15",
+    "prettier": "^1.4.4",
     "ts-loader": "^2.1.0",
     "tslint": "^5.4.3",
     "tslint-immutable": "^4.0.1",
