@@ -29,7 +29,7 @@ const stdoutWrite = (data: string) => IO(() => console.log(data))
 
 //unnecessaryDivide :: Number -> IO ()
 const unnecessaryDivide = (num: number) =>
-  stdoutWrite(safeDiv(num)(2).toString()).runIO()
+  stdoutWrite(safeDiv(100, num).toString()).runIO()
 
 export const main = (username: string) =>
   getNumRepos(username).fork(console.error, unnecessaryDivide)
