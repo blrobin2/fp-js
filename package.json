@@ -13,7 +13,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^8.0.0",
     "@types/ramda": "0.0.15",
     "ts-loader": "^2.1.0",
     "tslint": "^5.4.3",
@@ -24,7 +23,6 @@
   },
   "dependencies": {
     "ramda": "^0.24.1",
-    "ramda-fantasy": "^0.8.0",
-    "request": "^2.81.0"
+    "ramda-fantasy": "^0.8.0"
   }
 }

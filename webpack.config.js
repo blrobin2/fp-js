@@ -1,7 +1,7 @@
 const path = require('path')
 
 const config = {
-  entry: './src/main.ts',
+  entry: './src/index.ts',
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js'
